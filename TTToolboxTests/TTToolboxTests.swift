@@ -14,7 +14,6 @@ class TTToolboxTests: XCTestCase {
     super.setUp()
   }
 
-    
   func testExample() {
     XCTAssertEqual("dupa".first(), true, "test test")
   }
