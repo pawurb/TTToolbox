@@ -10,6 +10,7 @@
 		6E9482551E11B402001E069A /* TTToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E94824B1E11B402001E069A /* TTToolbox.framework */; };
 		6E94825A1E11B402001E069A /* TTToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9482591E11B402001E069A /* TTToolboxTests.swift */; };
 		6E94825C1E11B402001E069A /* TTToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E94824E1E11B402001E069A /* TTToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E9482671E11B45A001E069A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9482661E11B45A001E069A /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		6E9482541E11B402001E069A /* TTToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9482591E11B402001E069A /* TTToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTToolboxTests.swift; sourceTree = "<group>"; };
 		6E94825B1E11B402001E069A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9482661E11B45A001E069A /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		6E94824D1E11B402001E069A /* TTToolbox */ = {
 			isa = PBXGroup;
 			children = (
+				6E9482651E11B440001E069A /* Extensions */,
 				6E94824E1E11B402001E069A /* TTToolbox.h */,
 				6E94824F1E11B402001E069A /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				6E94825B1E11B402001E069A /* Info.plist */,
 			);
 			path = TTToolboxTests;
+			sourceTree = "<group>";
+		};
+		6E9482651E11B440001E069A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E9482661E11B45A001E069A /* StringExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 					6E94824A1E11B402001E069A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = K2TJ3T5LZE;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					6E9482531E11B402001E069A = {
@@ -198,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9482671E11B45A001E069A /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +335,7 @@
 		6E9482601E11B402001E069A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K2TJ3T5LZE;
@@ -334,6 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pabloweb.net.TTToolbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +356,7 @@
 		6E9482611E11B402001E069A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K2TJ3T5LZE;
@@ -360,6 +376,7 @@
 		6E9482631E11B402001E069A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K2TJ3T5LZE;
 				INFOPLIST_FILE = TTToolboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +389,7 @@
 		6E9482641E11B402001E069A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K2TJ3T5LZE;
 				INFOPLIST_FILE = TTToolboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
