@@ -28,24 +28,23 @@ extension String {
   }
 
   func slice(from: Int, to: Int) -> String? {
-    if(from < 0) {
-//      let fromIndex = index(endIndex, offsetBy: from)
-//      let toIndex = index(fromIndex, offsetBy: to)
-//
-//      return self[fromIndex...toIndex]
-      return ""
-    } else {
-      if to < 0 {
+    if to < 0 {
+      return nil
+    }
+
+    if to == 0 {
+      if from > characters.count {
         return nil
       }
-      
-      if to == 0 {
-        if from > characters.count {
-          return nil
-        }
-        return ""
-      }
-      
+      return ""
+    }
+
+    if(from < 0) {
+      let fromIndex = index(endIndex, offsetBy: from)
+      let toIndex = index(fromIndex, offsetBy: to-1)
+
+      return self[fromIndex...toIndex]
+    } else {
       let fromIndex = index(startIndex, offsetBy: from)
       let toIndex = index(startIndex, offsetBy: (to+from-1))
       return self[fromIndex...toIndex]

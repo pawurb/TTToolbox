@@ -1,4 +1,4 @@
-//
+
 //  TTToolboxTests.swift
 //  TTToolboxTests
 //
@@ -45,5 +45,6 @@ class StringExtensionsTests: XCTestCase {
     XCTAssertEqual("12345678".slice(from: 0, to: 0)!, "", "Slices string correctly")
     XCTAssertEqual("12345678".slice(from: 0, to: -1), nil, "Slices string correctly")
     XCTAssertEqual("12345678".slice(from: -2, to: 2)!, "78", "Slices string correctly")
+    XCTAssertEqual("12345678".slice(from: -3, to: 1)!, "6", "Slices string correctly")
   }
 }
