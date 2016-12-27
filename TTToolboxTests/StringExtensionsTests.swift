@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Foundation
 @testable import TTToolbox
 
 class StringExtensionsTests: XCTestCase {
@@ -27,5 +28,10 @@ class StringExtensionsTests: XCTestCase {
     XCTAssertEqual("subdomain.reddit.com".matchesExact(regex: hostnameRegex), true, "Should return true if matches")
     XCTAssertEqual("http://google.com".matchesExact(regex: hostnameRegex), false, "Should return false if does not match")
     XCTAssertEqual("www@wp.pl".matchesExact(regex: hostnameRegex), false, "Should return false if does not match")
+  }
+
+  func testSplit() {
+    XCTAssertEqual("h-e-y".split(by: "-"), ["h", "e", "y"], "Splits the string correctly")
+    XCTAssertEqual("h-e-y".split(by: " "), ["h-e-y"], "Splits the string correctly")
   }
 }

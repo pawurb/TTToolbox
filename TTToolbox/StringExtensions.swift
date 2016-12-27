@@ -16,9 +16,14 @@ extension String {
     if let matchElement = match.first {
       let range = matchElement.rangeAt(0)
       return range.location == 0 &&
-        range.length == characters.count 
+        range.length == characters.count
     } else {
       return false
     }
+  }
+
+  func split(by separator: String) -> [String] {
+    return characters.split(separator: Character.init(separator))
+      .map(String.init)
   }
 }
