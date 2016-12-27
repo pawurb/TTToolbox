@@ -47,4 +47,9 @@ class StringExtensionsTests: XCTestCase {
     XCTAssertEqual("12345678".slice(from: -2, to: 2)!, "78", "Slices string correctly")
     XCTAssertEqual("12345678".slice(from: -3, to: 1)!, "6", "Slices string correctly")
   }
+
+  func testReverse() {
+    XCTAssertEqual("12345".reverse(), "54321", "Reverses string correctly")
+    XCTAssertEqual("12345".reverse().reverse(), "12345", "Reverses string correctly")
+  }
 }

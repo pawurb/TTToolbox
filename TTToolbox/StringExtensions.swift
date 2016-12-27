@@ -41,13 +41,19 @@ extension String {
 
     if(from < 0) {
       let fromIndex = index(endIndex, offsetBy: from)
-      let toIndex = index(fromIndex, offsetBy: to-1)
+      let toIndex = index(fromIndex, offsetBy: (to-1))
 
       return self[fromIndex...toIndex]
     } else {
       let fromIndex = index(startIndex, offsetBy: from)
       let toIndex = index(startIndex, offsetBy: (to+from-1))
+
       return self[fromIndex...toIndex]
     }
   }
+
+  func reverse() -> String {
+    return String(characters.reversed())
+  }
 }
+
