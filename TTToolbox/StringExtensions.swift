@@ -9,7 +9,16 @@
 import Foundation
 
 extension String {
-  func first() -> Bool {
-    return true
+  func matchesExact(regex: NSRegularExpression) -> Bool {
+    let match = regex.matches(in: self,
+                              options: [],
+                              range: NSMakeRange(0, characters.count))
+    if let matchElement = match.first {
+      let range = matchElement.rangeAt(0)
+      return range.location == 0 &&
+        range.length == characters.count 
+    } else {
+      return false
+    }
   }
 }
