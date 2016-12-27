@@ -26,4 +26,8 @@ extension String {
     return characters.split(separator: Character.init(separator))
       .map(String.init)
   }
+
+  func slice(from: Int, to: Int) -> String? {
+    return self
+  }
 }
