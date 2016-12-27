@@ -28,6 +28,8 @@ extension String {
   }
 
   func slice(from: Int, to: Int) -> String? {
-    return self
+    let fromIndex = index(startIndex, offsetBy: from)
+    let toIndex = index(startIndex, offsetBy: (to-1))
+    return self[fromIndex...toIndex]
   }
 }
