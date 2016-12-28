@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7AEF2E1E12C1CF00A55394 /* GlobalHelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AEF2D1E12C1CF00A55394 /* GlobalHelperFunctions.swift */; };
+		6E7AEF301E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AEF2F1E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift */; };
 		6E9482551E11B402001E069A /* TTToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E94824B1E11B402001E069A /* TTToolbox.framework */; };
 		6E94825A1E11B402001E069A /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9482591E11B402001E069A /* StringExtensionsTests.swift */; };
 		6E94825C1E11B402001E069A /* TTToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E94824E1E11B402001E069A /* TTToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E7AEF2D1E12C1CF00A55394 /* GlobalHelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelperFunctions.swift; sourceTree = "<group>"; };
+		6E7AEF2F1E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelperFunctionsTests.swift; sourceTree = "<group>"; };
 		6E94824B1E11B402001E069A /* TTToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E94824E1E11B402001E069A /* TTToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTToolbox.h; sourceTree = "<group>"; };
 		6E94824F1E11B402001E069A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			children = (
 				6E9482591E11B402001E069A /* StringExtensionsTests.swift */,
 				6E94825B1E11B402001E069A /* Info.plist */,
+				6E7AEF2F1E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift */,
 			);
 			path = TTToolboxTests;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				6E9482661E11B45A001E069A /* StringExtensions.swift */,
+				6E7AEF2D1E12C1CF00A55394 /* GlobalHelperFunctions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7AEF2E1E12C1CF00A55394 /* GlobalHelperFunctions.swift in Sources */,
 				6E9482671E11B45A001E069A /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7AEF301E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift in Sources */,
 				6E94825A1E11B402001E069A /* StringExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
