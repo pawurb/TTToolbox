@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TTToolbox"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.platform     = :ios
   s.ios.deployment_target = '10.0'
   s.summary      = "A bunch of utility methods and extensions for Swift"
