@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
   func matchesExact(regex: NSRegularExpression) -> Bool {
     let match = regex.matches(in: self,
                               options: [],
