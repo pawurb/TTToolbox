@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E78B77E1E145BE300EB7F16 /* TTToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTToolbox.h; sourceTree = "<group>"; };
 		6E7AEF2D1E12C1CF00A55394 /* GlobalHelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelperFunctions.swift; sourceTree = "<group>"; };
 		6E7AEF2F1E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelperFunctionsTests.swift; sourceTree = "<group>"; };
 		6E94824B1E11B402001E069A /* TTToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,8 +76,9 @@
 		6E94824D1E11B402001E069A /* TTToolbox */ = {
 			isa = PBXGroup;
 			children = (
-				6E9482651E11B440001E069A /* Extensions */,
+				6E9482651E11B440001E069A /* Source */,
 				6E94824F1E11B402001E069A /* Info.plist */,
+				6E78B77E1E145BE300EB7F16 /* TTToolbox.h */,
 			);
 			path = TTToolbox;
 			sourceTree = "<group>";
@@ -91,13 +93,13 @@
 			path = TTToolboxTests;
 			sourceTree = "<group>";
 		};
-		6E9482651E11B440001E069A /* Extensions */ = {
+		6E9482651E11B440001E069A /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				6E9482661E11B45A001E069A /* StringExtensions.swift */,
 				6E7AEF2D1E12C1CF00A55394 /* GlobalHelperFunctions.swift */,
 			);
-			name = Extensions;
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
