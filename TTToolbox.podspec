@@ -12,5 +12,5 @@ A bunch of utility methods and extensions for Swift. More or less a stuff I miss
   s.license      =  { :type => "MIT", :file => "LICENSE" }
   s.author       = { "pawurb" => "p.urbanek89@gmail.com" }
   s.source       = { :git => "https://github.com/pawurb/TTToolbox.git", :tag => "#{s.version}" }
-  s.source_files = "TTToolbox/*.swift", "TTToolbox/**/*.swift"
+  s.source_files = "TTToolbox/**/*.swift"
 end

@@ -58,9 +58,9 @@
 		6E9482411E11B402001E069A = {
 			isa = PBXGroup;
 			children = (
+				6E94824C1E11B402001E069A /* Products */,
 				6E94824D1E11B402001E069A /* TTToolbox */,
 				6E9482581E11B402001E069A /* TTToolboxTests */,
-				6E94824C1E11B402001E069A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +86,9 @@
 		6E9482581E11B402001E069A /* TTToolboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				6E9482591E11B402001E069A /* StringExtensionsTests.swift */,
-				6E94825B1E11B402001E069A /* Info.plist */,
 				6E7AEF2F1E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift */,
+				6E94825B1E11B402001E069A /* Info.plist */,
+				6E9482591E11B402001E069A /* StringExtensionsTests.swift */,
 			);
 			path = TTToolboxTests;
 			sourceTree = "<group>";
@@ -96,10 +96,11 @@
 		6E9482651E11B440001E069A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6E9482661E11B45A001E069A /* StringExtensions.swift */,
 				6E7AEF2D1E12C1CF00A55394 /* GlobalHelperFunctions.swift */,
+				6E9482661E11B45A001E069A /* StringExtensions.swift */,
 			);
 			name = Source;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
