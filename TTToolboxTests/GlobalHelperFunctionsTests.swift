@@ -11,15 +11,11 @@ import Foundation
 @testable import TTToolbox
 
 class GlobalHelperFunctionsTest: XCTestCase {
-  override func setUp() {
-    super.setUp()
-  }
-
   func testDelay() {
     var value = 0
-    let done = self.expectation(description: "Change value")
+    let done = expectation(description: "Execute block after delay")
 
-    delay(seconds: 0.5, completion: {
+    delay(miliseconds: 500, completion: {
       value = 1
       done.fulfill()
       XCTAssert(true)
@@ -29,6 +25,34 @@ class GlobalHelperFunctionsTest: XCTestCase {
 
     waitForExpectations(timeout: 2, handler: { _ in
       XCTAssertEqual(value, 1, "Value was incremented after delay")
+    })
+  }
+
+  func testDebounce() {
+    var value = 0
+    let done = expectation(description: "Execute block after delay")
+
+    func incrementor() {
+      value += 1
+    }
+
+    let debouncedIncrementor = debounce(delay: 200, queue: DispatchQueue.main, action: {
+      incrementor()
+    })
+
+    for i in 1...10 {
+      debouncedIncrementor()
+      if i == 10 {
+        delay(miliseconds: 300, completion: {
+          done.fulfill()
+        })
+      }
+    }
+
+    XCTAssertEqual(value, 0, "Debounced function does not get executed right away")
+
+    waitForExpectations(timeout: 2, handler: { _ in
+      XCTAssertEqual(value, 1, "Value was incremented only once")
     })
   }
 }

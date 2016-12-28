@@ -11,10 +11,6 @@ import Foundation
 @testable import TTToolbox
 
 class StringExtensionsTests: XCTestCase {
-  override func setUp() {
-    super.setUp()
-  }
-
   func testMatchesExact() {
     var hostnameRegex: NSRegularExpression!
     do {
