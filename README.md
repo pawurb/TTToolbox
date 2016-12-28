@@ -2,6 +2,8 @@
 
 More or less a stuff I miss from Ruby when working with Swift.
 
+Work in progress.
+
 ## Installation
 
 Currently only available as a CocoaPod
