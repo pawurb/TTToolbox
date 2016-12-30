@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TTToolbox.xcscheme_^#shared#^_</key>
+		<key>TTToolbox MacOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TTToolbox iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6E29394C1E16B3B500318247</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E2939541E16B3B500318247</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6E94824A1E11B402001E069A</key>
 		<dict>
 			<key>primary</key>
