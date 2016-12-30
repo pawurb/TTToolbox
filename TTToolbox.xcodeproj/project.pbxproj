@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E24499C1E16E1AC00DFE436 /* TTToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2449931E16E1AB00DFE436 /* TTToolbox.framework */; };
+		6E2449AC1E16E2CB00DFE436 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9482591E11B402001E069A /* StringExtensionsTests.swift */; };
+		6E2449AD1E16E2D100DFE436 /* GlobalHelperFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AEF2F1E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift */; };
+		6E2449AE1E16E2D400DFE436 /* GlobalHelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AEF2D1E12C1CF00A55394 /* GlobalHelperFunctions.swift */; };
+		6E2449AF1E16E2DA00DFE436 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9482661E11B45A001E069A /* StringExtensions.swift */; };
 		6E2939561E16B3B500318247 /* TTToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29394D1E16B3B500318247 /* TTToolbox.framework */; };
 		6E2939641E16B3F000318247 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9482591E11B402001E069A /* StringExtensionsTests.swift */; };
 		6E2939651E16B3F200318247 /* GlobalHelperFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AEF2F1E12C1DC00A55394 /* GlobalHelperFunctionsTests.swift */; };
@@ -20,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6E24499D1E16E1AC00DFE436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E9482421E11B402001E069A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E2449921E16E1AB00DFE436;
+			remoteInfo = "TTToolbox tvOS";
+		};
 		6E2939661E16B4F200318247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E9482421E11B402001E069A /* Project object */;
@@ -37,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E2449931E16E1AB00DFE436 /* TTToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E24499B1E16E1AC00DFE436 /* TTToolbox tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTToolbox tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2449AA1E16E27300DFE436 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		6E29394D1E16B3B500318247 /* TTToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2939551E16B3B500318247 /* TTToolbox MacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTToolbox MacOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E78B77E1E145BE300EB7F16 /* TTToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTToolbox.h; sourceTree = "<group>"; };
@@ -51,6 +66,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6E24498F1E16E1AB00DFE436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2449981E16E1AC00DFE436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E24499C1E16E1AC00DFE436 /* TTToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E2939491E16B3B500318247 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +130,8 @@
 				6E9482541E11B402001E069A /* TTToolbox iOSTests.xctest */,
 				6E29394D1E16B3B500318247 /* TTToolbox.framework */,
 				6E2939551E16B3B500318247 /* TTToolbox MacOSTests.xctest */,
+				6E2449931E16E1AB00DFE436 /* TTToolbox.framework */,
+				6E24499B1E16E1AC00DFE436 /* TTToolbox tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +141,7 @@
 			children = (
 				6E9482651E11B440001E069A /* Source */,
 				6E94824F1E11B402001E069A /* Info.plist */,
+				6E2449AA1E16E27300DFE436 /* Info-tvOS.plist */,
 				6E78B77E1E145BE300EB7F16 /* TTToolbox.h */,
 			);
 			path = TTToolbox;
@@ -136,6 +169,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		6E2449901E16E1AB00DFE436 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E29394A1E16B3B500318247 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +193,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6E2449921E16E1AB00DFE436 /* TTToolbox tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2449A81E16E1AC00DFE436 /* Build configuration list for PBXNativeTarget "TTToolbox tvOS" */;
+			buildPhases = (
+				6E24498E1E16E1AB00DFE436 /* Sources */,
+				6E24498F1E16E1AB00DFE436 /* Frameworks */,
+				6E2449901E16E1AB00DFE436 /* Headers */,
+				6E2449911E16E1AB00DFE436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TTToolbox tvOS";
+			productName = "TTToolbox tvOS";
+			productReference = 6E2449931E16E1AB00DFE436 /* TTToolbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E24499A1E16E1AC00DFE436 /* TTToolbox tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2449A91E16E1AC00DFE436 /* Build configuration list for PBXNativeTarget "TTToolbox tvOSTests" */;
+			buildPhases = (
+				6E2449971E16E1AC00DFE436 /* Sources */,
+				6E2449981E16E1AC00DFE436 /* Frameworks */,
+				6E2449991E16E1AC00DFE436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E24499E1E16E1AC00DFE436 /* PBXTargetDependency */,
+			);
+			name = "TTToolbox tvOSTests";
+			productName = "TTToolbox tvOSTests";
+			productReference = 6E24499B1E16E1AC00DFE436 /* TTToolbox tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6E29394C1E16B3B500318247 /* TTToolbox MacOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E2939621E16B3B500318247 /* Build configuration list for PBXNativeTarget "TTToolbox MacOS" */;
@@ -235,6 +311,16 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Pawel Urbanek";
 				TargetAttributes = {
+					6E2449921E16E1AB00DFE436 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K2TJ3T5LZE;
+						ProvisioningStyle = Automatic;
+					};
+					6E24499A1E16E1AC00DFE436 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K2TJ3T5LZE;
+						ProvisioningStyle = Automatic;
+					};
 					6E29394C1E16B3B500318247 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = K2TJ3T5LZE;
@@ -274,11 +360,27 @@
 				6E9482531E11B402001E069A /* TTToolbox iOSTests */,
 				6E29394C1E16B3B500318247 /* TTToolbox MacOS */,
 				6E2939541E16B3B500318247 /* TTToolbox MacOSTests */,
+				6E2449921E16E1AB00DFE436 /* TTToolbox tvOS */,
+				6E24499A1E16E1AC00DFE436 /* TTToolbox tvOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6E2449911E16E1AB00DFE436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2449991E16E1AC00DFE436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E29394B1E16B3B500318247 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +412,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6E24498E1E16E1AB00DFE436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2449AF1E16E2DA00DFE436 /* StringExtensions.swift in Sources */,
+				6E2449AE1E16E2D400DFE436 /* GlobalHelperFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2449971E16E1AC00DFE436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2449AC1E16E2CB00DFE436 /* StringExtensionsTests.swift in Sources */,
+				6E2449AD1E16E2D100DFE436 /* GlobalHelperFunctionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E2939481E16B3B500318247 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,6 +469,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6E24499E1E16E1AC00DFE436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E2449921E16E1AB00DFE436 /* TTToolbox tvOS */;
+			targetProxy = 6E24499D1E16E1AC00DFE436 /* PBXContainerItemProxy */;
+		};
 		6E2939671E16B4F200318247 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6E94824A1E11B402001E069A /* TTToolbox iOS */;
@@ -362,6 +487,80 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6E2449A41E16E1AC00DFE436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K2TJ3T5LZE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/TTToolbox/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pabloweb.net.TTToolbox;
+				PRODUCT_NAME = TTToolbox;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		6E2449A51E16E1AC00DFE436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K2TJ3T5LZE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/TTToolbox/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pabloweb.net.TTToolbox;
+				PRODUCT_NAME = TTToolbox;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		6E2449A61E16E1AC00DFE436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K2TJ3T5LZE;
+				INFOPLIST_FILE = "$(SRCROOT)/TTToolbox/Info-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pabloweb.net.TTToolbox-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		6E2449A71E16E1AC00DFE436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K2TJ3T5LZE;
+				INFOPLIST_FILE = "$(SRCROOT)/TTToolbox/Info-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pabloweb.net.TTToolbox-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
 		6E29395E1E16B3B500318247 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -612,6 +811,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6E2449A81E16E1AC00DFE436 /* Build configuration list for PBXNativeTarget "TTToolbox tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2449A41E16E1AC00DFE436 /* Debug */,
+				6E2449A51E16E1AC00DFE436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6E2449A91E16E1AC00DFE436 /* Build configuration list for PBXNativeTarget "TTToolbox tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2449A61E16E1AC00DFE436 /* Debug */,
+				6E2449A71E16E1AC00DFE436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6E2939621E16B3B500318247 /* Build configuration list for PBXNativeTarget "TTToolbox MacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

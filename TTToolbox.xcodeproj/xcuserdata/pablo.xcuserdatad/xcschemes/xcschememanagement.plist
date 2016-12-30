@@ -14,9 +14,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TTToolbox tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6E2449921E16E1AB00DFE436</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E24499A1E16E1AC00DFE436</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6E29394C1E16B3B500318247</key>
 		<dict>
 			<key>primary</key>
