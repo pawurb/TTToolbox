@@ -1,4 +1,4 @@
-# TTToolbox [![Build Status](https://travis-ci.org/pawurb/TTToolbox.svg)](https://travis-ci.org/pawurb/TTToolbox) [![Pod version](https://badge.fury.io/co/TTToolbox.svg)](https://badge.fury.io/co/TTToolbox)[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+# TTToolbox [![Build Status](https://travis-ci.org/pawurb/TTToolbox.svg)](https://travis-ci.org/pawurb/TTToolbox) [![Pod version](https://badge.fury.io/co/TTToolbox.svg)](https://badge.fury.io/co/TTToolbox) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
 More or less a stuff I miss from Ruby when working with Swift.
@@ -17,7 +17,7 @@ $ brew install carthage
 In your `Cartfile`:
 
 ```ogdl
-github "TTToolbox" ~> 0.0.4
+github "pawurb/TTToolbox" ~> 0.0.4
 ```
 
 Run `carthage update` to build the framework and drag the built `TTToolbox.framework` into your Xcode project.
