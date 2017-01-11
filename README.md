@@ -3,7 +3,7 @@
 
 More or less a stuff I miss from Ruby when working with Swift.
 
-Work in progress.
+Work in progress, but discontinued for now because I moved to collaborating on [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift).
 
 ## Installation
 
@@ -17,7 +17,7 @@ $ brew install carthage
 In your `Cartfile`:
 
 ```ogdl
-github "pawurb/TTToolbox" ~> 0.0.4
+github "pawurb/TTToolbox" ~> 0.1.0
 ```
 
 Run `carthage update` to build the framework and drag the built `TTToolbox.framework` into your Xcode project.
